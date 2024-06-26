@@ -1,0 +1,22 @@
+.filter {
+    display: flex;
+    position: sticky;
+}
+
+.today,
+.week {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    border: 0.50px solid #eee;
+    border-radius: 6px;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.week .circle {
+    margin-left: 50px;
+}
