@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+.cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 18.88px;
+    min-width: 19.37px;
+    cursor: pointer;
+}
+
+.left_cross,
+.right_cross {
+    position: absolute;
+    background-color: $white-primary-bg;
+    width: 25px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.left_cross {
+    transform: rotate(44deg);
+}
+
+.right_cross {
+    transform: rotate(-44deg);
+}

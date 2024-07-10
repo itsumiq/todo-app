@@ -1,13 +1,15 @@
 import styles from "./Button.module.scss";
 
-type ButtonProprs = {
-    onClick: () => void;
+type buttonProps = {
+    onClick?: () => void;
+    title: string;
+    parentStyle?: string;
 };
 
-export const Button = ({ onClick }: ButtonProprs) => {
+export const Button = ({ onClick, title, parentStyle }: buttonProps) => {
     return (
-        <button className={styles.add_task} onClick={onClick}>
-            <h4>Add task</h4>
+        <button className={`${parentStyle} ${styles.button}`} onClick={onClick}>
+            {title}
         </button>
     );
 };

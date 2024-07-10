@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+input[type="radio"],
+label {
+    cursor: pointer;
+}
+
+.checkbox {
+    position: relative;
+    height: 16px;
+    width: 16px;
+}
+
+.checkbox::before {
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: inherit;
+    border: 0.5px solid $white-primary-bg;
+    //transform: translate(-50%, -50%);
+}
+
+.checkbox:checked::after {
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    width: 10px;
+    height: 10px;
+    background: $orange-bg;
+    transform: translate(35%, 35%);
+}

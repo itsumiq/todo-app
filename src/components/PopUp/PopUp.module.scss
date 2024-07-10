@@ -1,12 +1,84 @@
 @import "../../../styles/variables.scss";
 
 .pop_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    min-height: 570px;
-    min-width: 660px;
+    height: 593px;
+    width: 632px;
     background-color: $black-secondary-bg;
     border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.cross {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_text {
+    border: 1px solid $white-primary-bg;
+    border-radius: 11px;
+    width: 488px;
+    height: 102px;
+    margin-top: 32px;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.time_choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 235px;
+    margin-top: 54px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    width: 235px;
+    margin-top: 32px;
+}
+
+.sign {
+    font-size: 18px;
+    color: $white-primary;
+    margin-left: 8px;
+}
+
+.action {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-self: normal;
+}
+
+.save {
+    min-width: 488px;
+    min-height: 60px;
+    border-radius: 30px;
+    border-width: 0;
+    background-color: $white-primary-bg;
+    font-size: 16px;
+    font-weight: 500;
+    color: $black-secondary-bg;
 }

@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 34px;
 }
 
 h3 {
@@ -38,4 +38,17 @@ h4 {
 h6 {
     font-size: 14px;
     color: rgba(238, 238, 238, 0.3);
+}
+
+input {
+    font-family: "Rubik", sans-serif;
+}
+
+button {
+    font-family: "Rubik", sans-serif;
+    color: $white-primary;
+}
+
+label {
+    font-family: "Rubik", sans-serif;
 }

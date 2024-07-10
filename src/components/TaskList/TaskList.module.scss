@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .no_tasks {
     display: flex;
     flex-direction: column;
@@ -8,4 +10,11 @@
 .subtitle {
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+.add_task {
+    border-radius: 15px;
+    width: 430px;
+    height: 56px;
+    font-size: 18px;
 }
